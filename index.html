@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Info: FontAwesonme Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Info: Custom Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inp_field">
+            <input type="text" placeholder="City name">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="content">
+            <!-- ! Basic -->
+            <h2>Temperature</h2>
+            <h3 id="city" class="main_head">Karachi</h3>
+            <p id="temp" class="main_head"></p>°C
+            <p id="condition" class="main_head"></p>
+            <p >Feels Like: <span id="feel"></span>°C</p>
+            <!-- ! Humidity -->
+            <span id="humidity">
+                <i class="fa-solid fa-droplet"></i> Humidity: <span id="h_per"></span>%
+            </span>
+            <!-- ! High & Low Temperature -->
+            <span class="high_low">
+                <p>H : 20°C</p> /
+                <p>L : 19°C</p>
+            </span>
+            <!-- ! Sunrise & Sunset  -->
+            <span class="sunrise">
+                <p>Sunrise: 07:14 AM</p> /
+                <p>Sunset: 07:14 PM</p>
+            </span>
+            <p>Visibility: 5 km</p>
+            <p>Wind: 5 km/h <i class="fa-solid fa-location-arrow" style="margin-inline: 5px;"></i></p>
+        </div>
+    </div>
+</body>
+<!-- Info: Javascript -->
+ <script src="main.js"></script>
+</html>
